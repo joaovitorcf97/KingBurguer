@@ -11,20 +11,52 @@ import UIKit
 class Loadingbutton: UIView {
     lazy var button: UIButton = {
         let btn = UIButton()
-        btn.setTitle("Entrar", for: .normal)
-        btn.setTitleColor(.white, for: .normal)
-        btn.backgroundColor = .red
         btn.translatesAutoresizingMaskIntoConstraints = false
-        //btn.addTarget(self, action: #selector(sendDidTap), for: .touchUpInside)
         return btn
     }()
     
     let progress: UIActivityIndicatorView = {
         let p = UIActivityIndicatorView()
+        p.color = .white
         p.translatesAutoresizingMaskIntoConstraints = false
-        p.startAnimating()
         return p
     }()
+    
+    var title: String? {
+        willSet {
+            button.setTitle(newValue, for: .normal)
+        }
+    }
+    
+    var titleColor: UIColor? {
+        willSet {
+            button.setTitleColor(newValue, for: .normal)
+        }
+    }
+    
+    override var backgroundColor: UIColor? {
+        willSet {
+            button.backgroundColor = newValue
+        }
+    }
+    
+    func addTarget(_ target: Any?, action: Selector) {
+        button.addTarget(target, action: action, for: .touchUpInside)
+    }
+    
+    func startLoading(_ loading: Bool) {
+        if loading {
+            button.setTitle("", for: .normal)
+            progress.startAnimating()
+            alpha = 0.5
+            button.isEnabled = false
+        } else {
+            button.setTitle(title, for: .normal)
+            progress.stopAnimating()
+            alpha = 1.0
+            button.isEnabled = true
+        }
+     }
     
     override init(frame: CGRect) {
         super.init(frame: frame)

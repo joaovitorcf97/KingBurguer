@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B0B9E522AD1FA2400ABF16F /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0B9E512AD1FA2400ABF16F /* FeedViewController.swift */; };
+		2B0B9E542AD1FA6900ABF16F /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0B9E532AD1FA6900ABF16F /* ProfileViewController.swift */; };
+		2B0B9E562AD1FA9000ABF16F /* CouponViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0B9E552AD1FA9000ABF16F /* CouponViewController.swift */; };
 		D015777D2AB880FF00DA8478 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D015777C2AB880FF00DA8478 /* AppDelegate.swift */; };
 		D015777F2AB880FF00DA8478 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D015777E2AB880FF00DA8478 /* SceneDelegate.swift */; };
 		D01577862AB8810300DA8478 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D01577852AB8810300DA8478 /* Assets.xcassets */; };
@@ -26,6 +29,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2B0B9E512AD1FA2400ABF16F /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		2B0B9E532AD1FA6900ABF16F /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		2B0B9E552AD1FA9000ABF16F /* CouponViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CouponViewController.swift; sourceTree = "<group>"; };
 		D01577792AB880FF00DA8478 /* KingBurguer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KingBurguer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D015777C2AB880FF00DA8478 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D015777E2AB880FF00DA8478 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -57,6 +63,54 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2B0B9E4B2AD1F9BA00ABF16F /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				2B0B9E4C2AD1F9C400ABF16F /* View */,
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
+		2B0B9E4C2AD1F9C400ABF16F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2B0B9E512AD1FA2400ABF16F /* FeedViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2B0B9E4D2AD1F9CA00ABF16F /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				2B0B9E4E2AD1F9D600ABF16F /* View */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		2B0B9E4E2AD1F9D600ABF16F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2B0B9E532AD1FA6900ABF16F /* ProfileViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2B0B9E4F2AD1F9DF00ABF16F /* Coupon */ = {
+			isa = PBXGroup;
+			children = (
+				2B0B9E502AD1F9E800ABF16F /* View */,
+			);
+			path = Coupon;
+			sourceTree = "<group>";
+		};
+		2B0B9E502AD1F9E800ABF16F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2B0B9E552AD1FA9000ABF16F /* CouponViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		D01577702AB880FF00DA8478 = {
 			isa = PBXGroup;
 			children = (
@@ -76,6 +130,9 @@
 		D015777B2AB880FF00DA8478 /* KingBurguer */ = {
 			isa = PBXGroup;
 			children = (
+				2B0B9E4F2AD1F9DF00ABF16F /* Coupon */,
+				2B0B9E4D2AD1F9CA00ABF16F /* Profile */,
+				2B0B9E4B2AD1F9BA00ABF16F /* Feed */,
 				D02EC6B52AD0610200231121 /* Common */,
 				D0ABF42D2ACFB33800CA4A10 /* Home */,
 				D0CA72A12AC0887600305E1D /* SingUp */,
@@ -256,10 +313,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				D0CA72A42AC0889B00305E1D /* SignUpViewController.swift in Sources */,
+				2B0B9E522AD1FA2400ABF16F /* FeedViewController.swift in Sources */,
 				D0C387D72ACA3C4800729FBF /* SignInViewModel.swift in Sources */,
 				D01577932AB89A9800DA8478 /* SignInViewController.swift in Sources */,
 				D0CA72A62AC08AFE00305E1D /* SigInCoordinator.swift in Sources */,
 				D0216AED2ACB624C00D114CA /* SignUpViewModel.swift in Sources */,
+				2B0B9E562AD1FA9000ABF16F /* CouponViewController.swift in Sources */,
+				2B0B9E542AD1FA6900ABF16F /* ProfileViewController.swift in Sources */,
 				D0216AEA2ACB546100D114CA /* SignUpCoordinator.swift in Sources */,
 				D0C387D62ACA3C4800729FBF /* SignInState.swift in Sources */,
 				D0216AEF2ACB62F700D114CA /* SignUpState.swift in Sources */,

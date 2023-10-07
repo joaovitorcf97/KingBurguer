@@ -47,6 +47,10 @@ class SignInViewController: UIViewController {
     
     lazy var send: Loadingbutton = {
         let btn = Loadingbutton()
+        btn.title = "Login"
+        btn.titleColor = .white
+        btn.backgroundColor = .red
+        btn.addTarget(self, action: #selector(sendDidTap))
 
         return btn
     }()
@@ -55,7 +59,7 @@ class SignInViewController: UIViewController {
         let btn = UIButton()
         
         btn.setTitle("Criar conta", for: .normal)
-        btn.setTitleColor(.black, for: .normal)
+        btn.setTitleColor(.label, for: .normal)
         btn.translatesAutoresizingMaskIntoConstraints = false
         btn.addTarget(self, action: #selector(registerDitTap), for: .touchUpInside)
 
@@ -204,6 +208,7 @@ extension SignInViewController: SignInViewModelDelegate {
             case .none:
                 break
             case .loading:
+                send.startLoading(true)
                 break
             case .goToHome:
             viewModel?.goToHome()
