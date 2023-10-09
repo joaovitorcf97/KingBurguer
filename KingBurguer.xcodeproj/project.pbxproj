@@ -10,6 +10,9 @@
 		2B0B9E522AD1FA2400ABF16F /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0B9E512AD1FA2400ABF16F /* FeedViewController.swift */; };
 		2B0B9E542AD1FA6900ABF16F /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0B9E532AD1FA6900ABF16F /* ProfileViewController.swift */; };
 		2B0B9E562AD1FA9000ABF16F /* CouponViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0B9E552AD1FA9000ABF16F /* CouponViewController.swift */; };
+		2B9CFC8F2AD33250008BC28C /* FeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B9CFC8E2AD33250008BC28C /* FeedTableViewCell.swift */; };
+		2B9CFC912AD38CA7008BC28C /* HighlightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B9CFC902AD38CA7008BC28C /* HighlightView.swift */; };
+		2B9CFC932AD39D10008BC28C /* FeedCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B9CFC922AD39D10008BC28C /* FeedCollectionViewCell.swift */; };
 		D015777D2AB880FF00DA8478 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D015777C2AB880FF00DA8478 /* AppDelegate.swift */; };
 		D015777F2AB880FF00DA8478 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D015777E2AB880FF00DA8478 /* SceneDelegate.swift */; };
 		D01577862AB8810300DA8478 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D01577852AB8810300DA8478 /* Assets.xcassets */; };
@@ -32,6 +35,9 @@
 		2B0B9E512AD1FA2400ABF16F /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		2B0B9E532AD1FA6900ABF16F /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		2B0B9E552AD1FA9000ABF16F /* CouponViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CouponViewController.swift; sourceTree = "<group>"; };
+		2B9CFC8E2AD33250008BC28C /* FeedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableViewCell.swift; sourceTree = "<group>"; };
+		2B9CFC902AD38CA7008BC28C /* HighlightView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighlightView.swift; sourceTree = "<group>"; };
+		2B9CFC922AD39D10008BC28C /* FeedCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCollectionViewCell.swift; sourceTree = "<group>"; };
 		D01577792AB880FF00DA8478 /* KingBurguer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KingBurguer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D015777C2AB880FF00DA8478 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D015777E2AB880FF00DA8478 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -75,6 +81,9 @@
 			isa = PBXGroup;
 			children = (
 				2B0B9E512AD1FA2400ABF16F /* FeedViewController.swift */,
+				2B9CFC8E2AD33250008BC28C /* FeedTableViewCell.swift */,
+				2B9CFC902AD38CA7008BC28C /* HighlightView.swift */,
+				2B9CFC922AD39D10008BC28C /* FeedCollectionViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -313,12 +322,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				D0CA72A42AC0889B00305E1D /* SignUpViewController.swift in Sources */,
+				2B9CFC912AD38CA7008BC28C /* HighlightView.swift in Sources */,
+				2B9CFC932AD39D10008BC28C /* FeedCollectionViewCell.swift in Sources */,
 				2B0B9E522AD1FA2400ABF16F /* FeedViewController.swift in Sources */,
 				D0C387D72ACA3C4800729FBF /* SignInViewModel.swift in Sources */,
 				D01577932AB89A9800DA8478 /* SignInViewController.swift in Sources */,
 				D0CA72A62AC08AFE00305E1D /* SigInCoordinator.swift in Sources */,
 				D0216AED2ACB624C00D114CA /* SignUpViewModel.swift in Sources */,
 				2B0B9E562AD1FA9000ABF16F /* CouponViewController.swift in Sources */,
+				2B9CFC8F2AD33250008BC28C /* FeedTableViewCell.swift in Sources */,
 				2B0B9E542AD1FA6900ABF16F /* ProfileViewController.swift in Sources */,
 				D0216AEA2ACB546100D114CA /* SignUpCoordinator.swift in Sources */,
 				D0C387D62ACA3C4800729FBF /* SignInState.swift in Sources */,
